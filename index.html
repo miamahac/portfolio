@@ -44,11 +44,12 @@
         <a class="navbar-brand" href="#page-top">
           <img src="images/logo-mia.svg" alt="" width="125" height="auto" class="d-inline-block align-text-center">
         </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav nav ms-auto me-0 text-center">
+          <ul class="navbar-nav nav ms-auto me-0 text-center align-items-center">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#page-top">Home</a>
             </li>
@@ -59,7 +60,9 @@
               <a class="nav-link" href="#contact">Contact me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" src="images/cv-mia_mahac.jpg" href="https://drive.google.com/file/d/1lYDmTZMi_DAvw7-ulyhSfB419qY33cZR/view" target="_blank">CV
+              <a class="nav-link" href="https://drive.google.com/file/d/1lYDmTZMi_DAvw7-ulyhSfB419qY33cZR/view" target="_blank">
+                <!-- <button type="button" class="btn btn-secondary">CV</button> -->
+                <button type="button" class="btn btn-outline-primary">DOWNLOAD CV</button>
               </a>
             </li>
           </ul>
@@ -69,34 +72,44 @@
   </div>
 
 
-  <!-- <section class="home pt-6 pt-md-11 pb-8 pb-md-9"> -->
-    <section class="home">
-    <div class="container container-raz">
-      <!-- <div class="row pt-5 pb-5 mt-5 mb-5 align-items-center justify-content-between"> -->
-        <div class="row center justify-content-between">
+  <section class="home">
+    <div class="container container-raz-home">
+      <div class="row align-items-center justify-content-between">
         <div class="col-lg-5">
           <h1>Front-end developer and digital designer </h1>
-          <p class="pt-3">Hello! My name is Mia Mahač and I’m a design minded front-end developer based in Zagreb, Croatia. Highly experienced in designing & developing  Bootstrap websites. </p>
+          <p class="pt-3">Hello! My name is Mia Mahač and I’m a design minded front-end developer based in Zagreb,
+            Croatia. Highly experienced in designing & developing Bootstrap websites. </p>
+            <div class="pt-5">
           <a href="#contact">
-            <button type="button" class="btn btn-primary">CONTACT ME</button>
+            <button type="button" class="btn btn-primary d-inline-block">CONTACT ME</button>
           </a>
+           <a href="https://drive.google.com/file/d/1lYDmTZMi_DAvw7-ulyhSfB419qY33cZR/view" target="_blank">
+                <!-- <button type="button" class="btn btn-secondary">CV</button> -->
+                <button type="button" class="btn btn-outline-primary d-inline-block">DOWNLOAD CV</button>
+              </a>
+          </div>
+          <!-- <br><br><br><br> -->
+          <!-- <a href="https://www.linkedin.com/in/mia-maha%C4%8D-05ba381b4" target="_blank"><i class="fab fa-linkedin-in home-icon"></i></a> -->
+          <!-- <a href="https://www.behance.net/miamaha" target="_blank"><i class="fab fa-behance home-icon"></i></a> -->
         </div>
-        <div class="col-lg-6">
-          <img src="images/illustration-home-02.svg" class="img-fluid" id="illustration-home">
+        <div class="col-lg-6 wrapper justify-content-center">
+          <img src="images/illustration-home-06.svg" class="img-fluid d-none d-sm-block" id="illustration-home">
+          <img src="images/illustration-home-mobile.svg" class="img-fluid d-sm-none" id="illustration-home">
         </div>
       </div>
     </div>
   </section>
 
 
-  <section class="portfolio container-pad container-raz" id="portfolio" style="background-image: url(images/pattern-5.svg);">
+  <section class="portfolio container-pad container-raz" id="portfolio"
+    style="background-image: url(images/pattern-7.svg);">
     <div class="container">
       <div class="row text-center justify-content-center">
-        <div class="col-lg-3">
-        <h2 style="color: #2e304b">PORTFOLIO</h2>
-        <p style="color: #2e304b">I work in HTML5, CSS3, JavaScript, Bootstrap and React JS</p>
+        <div class="col-lg-4">
+          <h2 style="color: #2e304b">PORTFOLIO</h2>
+          <p style="color: #2e304b">Creating responsive websites using HTML5, CSS3 and JavaScript. Also, familiar with Bootstrap and React.js.</p>
+        </div>
       </div>
-    </div>
       <div class="container-fluid">
         <div class="row pt-5 justify-content-center">
           <div class="carousel" data-flickity='{ "wrapAround": true }'>
@@ -161,11 +174,14 @@
     </div>
   </section>
 
-  
 
 
+  <img src="images/dots.svg" class="dots d-none d-sm-none d-md-block">
+  <img src="images/wave.svg" class="wave d-none d-sm-none d-md-block">
   <section class="container-pad container-raz" id="contact">
+    
     <div class="container">
+     
       <div class="row text-center">
         <h2>CONTACT ME</h2>
       </div>
@@ -194,20 +210,34 @@
               style="height: 100px"></textarea>
           </div>
         </div>
-        <div class="wrapper">
-        <button type="submit" class="btn btn-primary">Send</button>
-      </div>
+        <div class="wrapper pt-5">
+          <button type="submit" class="btn btn-primary">SEND</button>
+        </div>
       </form>
   </section>
 
   <!-- Remove the container if you want to extend the Footer to full width. -->
 
   <footer class="text-center text-lg-start" style="background-color: #f1f1f1;">
-    <div class="container d-flex justify-content-center py-5 px-5">
-      <a href="https://www.linkedin.com/in/mia-maha%C4%8D-05ba381b4" target="_blank"><i
-          class="fab fa-linkedin-in footer-icon"></i></a>
-      <a href="https://www.behance.net/miamaha" target="_blank"><i class="fab fa-behance footer-icon"></i></a>
+    <div class="container py-5 px-5">
+      <div class="row">
+        <div class="col-lg-4 logo-pad">
+          <img src="images/logo-b.svg" alt="" width="125" height="auto" class="d-inline-block align-text-center" href="#page-top">
+        </div>
+        <div class="col-lg-4 logo-pad">
+          <h6 class="pb-2">CONTACT</h6>
+          <p class="footer-text">mia.mahac@gmail.com</p>
+          <p class="footer-text">+385 98 927 3440</p>
+        </div>
+        <div class="col-lg-4 justify-content-center logo-pad">
+          <h6 class="pb-2">FIND ME ON:</h6>
+          <a href="https://www.linkedin.com/in/mia-maha%C4%8D-05ba381b4" target="_blank"><i class="fab fa-linkedin-in footer-text"></i></a>
+          <!-- <a href="https://www.behance.net/miamaha" target="_blank"><i class="fab fa-behance footer-icon"></i></a> -->
+        </div>
+      </div>
     </div>
+
+
 
     <!-- Copyright -->
     <div class="text-center p-2 copyright">

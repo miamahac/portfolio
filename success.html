@@ -1,81 +1,116 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    
-    <!-- CSS Flickity -->
-<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- CSS styles -->
-    <link href="css/style.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  <!-- CSS Flickity -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+  <!-- CSS styles -->
+  <link href="css/style.css" rel="stylesheet">
 
 
-     <!--Font Awesome -->
+  <!--Font Awesome -->
 
   <script src="https://kit.fontawesome.com/da83294f12.js" crossorigin="anonymous"></script>
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
 
 
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 
 
-    <title>Mia Mahac Portfolio</title>
-  </head>
-  <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg ms-0 me-0 pt-4 pb-4">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#page-top">
-                <img src="images/logo-mia.svg" alt="" width="125" height="auto" class="d-inline-block align-text-center">
+  <title>Mia Mahac Front-end developer</title>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark ms-0 me-0 pt-3 pb-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#page-top">
+          <img src="images/logo-mia.svg" alt="" width="125" height="auto" class="d-inline-block align-text-center">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav nav ms-auto me-0 text-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#page-top">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" src="images/cv-mia_mahac.jpg"
+                href="https://drive.google.com/file/d/1lYDmTZMi_DAvw7-ulyhSfB419qY33cZR/view" target="_blank"><button type="button" class="btn btn-secondary">CV</button>
               </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav nav ms-auto me-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#page-top">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#portfolio">Portfolio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact me</a>
-                  </li>
-                </ul>
-               
-              </div>
-            </div>
-          </nav>
-    </div>
-
-
-<section class="container-pad container-raz">
-<div class="container">
-  <div class="row mt-5 text-center">
-      <h2>CONTACT ME</h2>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </div>
-  <p class="text-center pt-3">Success! I will text you back very soon.</p>
-  <div class="col-lg-6">
-    <img src="images/illustration-home-01.svg" class="img-fluid">
-</div>
-</section>
 
-<!-- Remove the container if you want to extend the Footer to full width. -->
+  <section class="container-pad container-raz-home" id="contact">
+    <div class="container">
+      <div class="row pb-5 text-center">
+        <h2>CONTACT ME</h2>
+        <p class="pt-3">Success! I will text you back very soon.</p>
+      </div>
+
+      <div class="row pt-5 justify-content-center">
+        <div class="col-lg-6">
+        <img src="images/illustration-home-05.svg" class="img-fluid" id="illustration-home">
+      </div>
+      </div>
+
+      </div>
+      </section>
+
+
+
+  <!-- Remove the container if you want to extend the Footer to full width. -->
 
   <footer class="text-center text-lg-start" style="background-color: #f1f1f1;">
-    <div class="container d-flex justify-content-center py-5 px-5">
-        <a href="https://www.linkedin.com/in/mia-maha%C4%8D-05ba381b4" target="_blank"><i class="fab fa-linkedin-in footer-icon"></i></a>
-        <a href="https://www.behance.net/miamaha" target="_blank"><i class="fab fa-behance footer-icon"></i></a>
+    <div class="container py-5 px-5">
+      <div class="row">
+        <div class="col-lg-4 logo-pad">
+          <img src="images/logo-b.svg" alt="" width="125" height="auto" class="d-inline-block align-text-center" href="#page-top">
+        </div>
+        <div class="col-lg-4 logo-pad">
+          <h6 class="pb-2">CONTACT</h6>
+          <p class="footer-text">mia.mahac@gmail.com</p>
+          <p class="footer-text">+385 98 927 3440</p>
+        </div>
+        <div class="col-lg-4 justify-content-center logo-pad">
+          <h6 class="pb-2">FIND ME ON:</h6>
+          <a href="https://www.linkedin.com/in/mia-maha%C4%8D-05ba381b4" target="_blank"><i
+              class="fab fa-linkedin-in footer-icon"></i></a>
+          <a href="https://www.behance.net/miamaha" target="_blank"><i class="fab fa-behance footer-icon"></i></a>
+        </div>
+      </div>
     </div>
+
+
 
     <!-- Copyright -->
     <div class="text-center p-2 copyright">
@@ -83,30 +118,39 @@
     </div>
     <!-- Copyright -->
   </footer>
-  
-<!-- End of .container -->
 
-  
-    <!-- Optional JavaScript; choose one of the two! -->
+  <!-- End of .container -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+  </script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
     -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
 
 
 
-    <!-- JavaScript -->
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+  <!-- JavaScript -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 
-  </body>
+</body>
+
 </html>
