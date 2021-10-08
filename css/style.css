@@ -378,6 +378,7 @@ margin-bottom: 150px;
 @media (max-width: 991.98px) {
   #illustration-home {
     padding-top: 15%;
+    width: 80%;
   }
 
   .carousel-cell {
@@ -389,19 +390,21 @@ margin-bottom: 150px;
 
   .wave {
     width: 150px;
-    margin-top: 720px;
-    margin-right: -100px;
+    margin-top: 550px;
+    margin-right: 0;
   }
 
   .dots {
     width: 150px;
-    margin: 100px 100px;
+    margin: 10px 30px;
   }
+
 }
 
 @media (max-width: 768px) {
   #illustration-home {
     padding-top: 25%;
+    width: 80%;
   }
 
   .container-raz {
