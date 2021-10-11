@@ -18,14 +18,25 @@ h1 {
   font-size: 3rem;
 }
 
+h6 {
+  color: #2e304b;
+}
+
 p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
 
+a {
+  color: transparent;
+}
+
+.footer-text {
+  color: #2e304b;
+}
 
 .btn-primary {
-  margin-top: 20px;
+  /* margin-top: 30px; */
   padding: 2% 5%;
   width: 180px;
   height: 50px;
@@ -74,6 +85,111 @@ p {
   border-color: #f89999;
 }
 
+
+.btn-outline-primary {
+  color: #fff;
+  /* margin-top: 30px; */
+  padding: 2% 5%;
+  width: 180px;
+  height: 50px;
+  background-color: transparent;
+  border: 3px solid #fd8e8e;
+  border-radius: 20px;
+  font-weight: 700;
+}
+
+.btn-outline-primary:hover {
+  padding: 2% 5%;
+  background-color: #f89999;
+  border: none;
+}
+
+.btn-check:focus+.btn-outline-primary,
+.btn-outline-primary:focus {
+  color: #fff;
+  background-color: #f89999;
+  border-color: #f89999;
+  box-shadow: 0 0 0 0.25rem rgba(248, 153, 153, 0.5);
+}
+
+.btn-check:checked+.btn-outline-primary,
+.btn-check:active+.btn-outline-primary,
+.btn-outline-primary:active,
+.btn-outline-primary.active,
+.show>.btn-outline-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #f89999;
+  border-color: #f89999;
+}
+
+.btn-check:checked+.btn-outline-primary:focus,
+.btn-check:active+.btn-outline-primary:focus,
+.btn-outline-primary:active:focus,
+.btn-outline-primary.active:focus,
+.show>.btn-outline-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(248, 153, 153, 0.5);
+}
+
+.btn-outline-primary:disabled,
+.btn-outline-primary.disabled {
+  color: #fff;
+  background-color: #f89999;
+  border-color: #f89999;
+}
+
+
+.btn-secondary {
+  background-color: #90C2CD;
+  padding: 2% 5%;
+  width: 120px;
+  height: 50px;
+  border: none;
+  border-radius: 20px;
+  font-weight: 700;
+}
+
+
+
+.btn-secondary:hover {
+  padding: 2% 5%;
+  background-color: #9dc6cf;
+  border: none;
+}
+
+.btn-check:focus+.btn-secondary,
+.btn-secondary:focus {
+  color: #fff;
+  background-color: #9dc6cf;
+  border-color: #9dc6cf;
+  box-shadow: 0 0 0 0.25rem #80a6af;
+}
+
+.btn-check:checked+.btn-secondary,
+.btn-check:active+.btn-secondary,
+.btn-secondary:active,
+.btn-primary.active,
+.show>.btn-secondary.dropdown-toggle {
+  color: #fff;
+  background-color: #9dc6cf;
+  border-color: #9dc6cf;
+}
+
+.btn-check:checked+.btn-secondary:focus,
+.btn-check:active+.btn-secondary:focus,
+.btn-secondary:active:focus,
+.btn-secondary.active:focus,
+.show>.btn-secondary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem #80a6af;
+}
+
+.btn-secondary:disabled,
+.btn-secondary.disabled {
+  color: #fff;
+  background-color: #80a6af;
+  border-color: #80a6af;
+}
+
+
 .nav-link {
   color: #fff;
   text-transform: uppercase;
@@ -97,6 +213,12 @@ margin-bottom: 150px;
   padding-top: 200px;
 }
 
+.container-raz-home {
+  padding-bottom: 200px;
+  padding-top: 150px;
+}
+
+
 /* Sections*/
 .home {
   background-color: #2e304b;
@@ -104,37 +226,39 @@ margin-bottom: 150px;
 
 .portfolio {
   background-color: #f1f1f1;
-  background-image: url(images/pattern-5.svg);
   background-repeat: round;
 }
 
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  margin: 0;
-  height: 75px;
-  width: 75px;
-  background-size: 80%, 80%;
-  background-color: #fd8e8e;
+.wave {
+  position: absolute;
+  width: 200px;
+  right: 10px;
+  margin-top: 450px;
+  opacity: 1;
+
 }
 
-
-.carousel-control-next-icon:after {
-  font-size: 35px;
-  color: #fd8e8e;
+.dots {
+  position: absolute;
+  width: 150px;
+  margin: 100px 150px;
+  opacity: 1;
 }
 
-.carousel-control-prev-icon:after {
-
-  font-size: 35px;
-  color: #fd8e8e;
-}
 
 .footer-icon {
   padding-left: 10px;
   padding-right: 10px;
   color: #2e304b;
 }
+
+.home-icon {
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #90C2CD;
+}
+
 
 .copyright {
   color: #2e304b;
@@ -184,24 +308,22 @@ margin-bottom: 150px;
   height: auto;
 }
 
-
-
-
-
-
 .languages {
   position: block;
   background-color: #2e304b;
   margin-top: 10px;
-  padding: 0.2rem;
+  padding: 0.2rem 0.6rem;
   text-align: center;
   border-radius: 10px;
   text-transform: uppercase;
   font-size: 0.8rem;
 }
 
+
+
 .flickity-button {
   background-color: #2e304b;
+
 }
 
 .flickity-button:hover {
@@ -218,14 +340,87 @@ margin-bottom: 150px;
   border-radius: 20%;
 }
 
-
 .wrapper {
   text-align: center;
 }
 
+@media (max-width: 991.98px) {
+  #illustration-home {
+    padding-top: 15%;
+    width: 80%;
+  }
+
+  .carousel-cell {
+    width: 80%;
+    height: auto;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .wave {
+    width: 150px;
+    margin-top: 550px;
+    margin-right: 0;
+  }
+
+  .dots {
+    width: 150px;
+    margin: 10px 30px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  #illustration-home {
+    padding-top: 25%;
+    width: 80%;
+  }
+
+  .container-raz {
+    padding-bottom: 80px;
+    padding-top: 80px;
+  }
+
+  .container-raz-home {
+    padding-bottom: 80px;
+    padding-top: 80px;
+  }
+
+  .logo-pad {
+    padding-bottom: 50px;
+  }
+
+  .flickity-prev-next-button {
+    display: none;
+  }
+
+  .is-selected {
+    width: 100%;
+  }
+
+  .btn-primary {
+    width: 180px;
+    height: 50px;
+    padding: 2% 4%;
+  }
+
+  .btn-outline-primary {
+    width: 180px;
+    height: 50px;
+    padding: 2% 4%;
+  }
+
+
+
+}
 
 @media only screen and (max-width: 600px) {
   .container-raz {
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
+
+  .container-raz-home {
     padding-bottom: 100px;
     padding-top: 100px;
   }
@@ -238,31 +433,33 @@ margin-bottom: 150px;
   }
 
   #illustration-home {
-    padding-top: 25%;
-  }
-
-}
-
-@media (max-width: 768px) {
-  #illustration-home {
-    padding-top: 25%;
-  }
-
-  .container-raz {
-    padding-bottom: 80px;
-    padding-top: 80px;
-  }
-}
-
-@media (max-width: 991.98px) {
-  #illustration-home {
-    padding-top: 15%;
-  }
-
-  .carousel-cell {
+    padding-top: 35%;
     width: 80%;
-    height: auto;
-    margin-right: 0px;
-    margin-left: 0px;
   }
+
+  .flickity-prev-next-button {
+    display: none;
+  }
+
+  .is-selected {
+    width: 100%;
+  }
+
+  .logo-pad {
+    padding-bottom: 50px;
+  }
+
+  .btn-primary {
+    width: 160px;
+    height: 50px;
+  }
+
+  .btn-outline-primary {
+    width: 160px;
+    height: 50px;
+  }
+
+
+
+
 }
