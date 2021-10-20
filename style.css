@@ -28,7 +28,12 @@ p {
 }
 
 a {
-  color: transparent;
+  text-decoration: none;
+}
+
+ol,
+ul {
+  padding-left: 0 !important;
 }
 
 .footer-text {
@@ -49,7 +54,6 @@ a {
 .btn-primary:hover {
   padding: 2% 5%;
   background-color: hsl(0, 94%, 81%);
-  border: none;
 }
 
 .btn-check:focus+.btn-primary,
@@ -101,7 +105,7 @@ a {
 .btn-outline-primary:hover {
   padding: 2% 5%;
   background-color: #f89999;
-  border: none;
+  border: 3px solid #f89999;
 }
 
 .btn-check:focus+.btn-outline-primary,
@@ -202,11 +206,10 @@ a {
   color: #90C2CD;
 }
 
-/* 
-.container-pad {
-margin-top: 150px;
-margin-bottom: 150px;
-} */
+.navbar-dark .navbar-toggler {
+  color: rgba(255, 255, 255, .55);
+  border-color: transparent;
+}
 
 .container-raz {
   padding-bottom: 200px;
